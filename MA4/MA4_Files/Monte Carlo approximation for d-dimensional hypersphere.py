@@ -1,5 +1,5 @@
 # Reviewer: 
-# Student: 
+# Student: Ifeoluwa Ojo
 import random
 import functools
 import math

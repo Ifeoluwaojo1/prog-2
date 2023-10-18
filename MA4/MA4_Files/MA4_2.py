@@ -1,5 +1,8 @@
 #!/usr/bin/env python3.9
 
+# Reviewer: 
+# Student: Ifeoluwa Ojo
+
 from cProfile import label
 from person import Person
 from numba import njit

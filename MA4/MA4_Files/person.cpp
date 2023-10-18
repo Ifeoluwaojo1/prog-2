@@ -1,7 +1,7 @@
 #include <cstdlib>
 // Person class 
 // Reviewer: 
-// Student: 
+// Student: Ifeoluwa Ojo
 
 class Person{
 	public:
