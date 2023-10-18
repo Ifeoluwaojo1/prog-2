@@ -32,6 +32,7 @@ if __name__ == '__main__':
 	nlst = []
 	nlst2 = []
 	t_py = []
+	t_py2 = []
 	t_num = []
 	t_num2 = []
 	t_cpp = []
@@ -58,3 +59,26 @@ if __name__ == '__main__':
 	ax.plot(nlst, t_cpp, "-g", label='C++')
 	ax.legend(loc="upper left")
 	fig.savefig('Comparison_Py_Num_Ct.png')
+	
+	for n in range(30, 46):
+		nlst2.append(n)
+		start = perf_counter_ns()
+		fib_py(n)
+		end = perf_counter_ns()
+		t_py2.append(end - start)
+		start = perf_counter_ns()
+		fib_numba(n)
+		end = perf_counter_ns()
+		t_num2.append(end - start)
+		start = perf_counter_ns()
+		fib_cpp(n)
+		end = perf_counter_ns()
+		t_cpp2.append(end - start)
+
+	fig2 = plt.figure()
+	ax = fig2.add_subplot()
+	ax.plot(nlst2, t_py2, "-b", label="Python")
+	ax.plot(nlst2, t_num2, "-r", label="Numba")
+	ax.plot(nlst2, t_cpp2, "-g", label='C++')
+	ax.legend(loc="upper left")
+	fig2.savefig('Second_Comparison_Py_Num_Ct.png')
