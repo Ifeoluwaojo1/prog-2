@@ -1,4 +1,4 @@
-# Reviewer: 
+# Reviewer: William Samuelsson
 # Student: Ifeoluwa Ojo
 import random
 import functools

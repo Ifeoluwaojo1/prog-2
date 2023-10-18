@@ -1,6 +1,6 @@
 #include <cstdlib>
 // Person class 
-// Reviewer: 
+// Reviewer: William Samuelsson
 // Student: Ifeoluwa Ojo
 
 
